@@ -64,9 +64,6 @@ header a{
     margin-inline: 10px;
 }
 
-.sign-in .container{
-
-}
 .sign-in .img-1 img{
     width: 100%;
 }
@@ -90,6 +87,23 @@ form input{
     border-radius: 4px;
     padding-left: 20px;
 }
+form input[type="email"]:invalid {
+    border: 2px solid red;
+}
+  
+form input[type="email"]:valid {
+    border: 2px solid green;
+}
+
+form #error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+form input[type="email"]:invalid + #error-message {
+    display: block;
+}
 form button{
     margin-top: 14px;
     height: 40px;
@@ -99,8 +113,11 @@ form button{
     color: white;
     font-weight: 600;
     box-shadow: 0px 2px 6px hsla(0, 0%, 0%, 0.4);
+    cursor: pointer;
 }
-
+form button:hover{
+    background-color:hsl(220.54deg 100% 70.98%);
+}
 .sign-in .bg-desktop{
     display: none;
 }
@@ -138,6 +155,12 @@ form button{
     width: fit-content;
     border: none;
     background: none;
+    margin: 2.5em 0;
+    cursor: pointer;
+}
+.features .btn-filo .text:hover{
+    filter: brightness(0) saturate(100%) invert(91%) sepia(35%) saturate(551%) hue-rotate(92deg) brightness(95%) contrast(90%);;
+    
 }
 .features .btn-filo .text{
     display: flex;
@@ -152,6 +175,137 @@ form button{
 }
 
 
+.team{
+    margin-top: -4px;
+    padding-bottom: 80px;
+}
+.team .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team .card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 14px hsla(0, 0%, 0%, 0.15);
+    width: 310px;
+    border-radius: 4px;
+    padding: 18px 6px 18px 24px;
+    background-color: white;
+    margin-top: 0.5em 
+}
+.team .card .image{
+    text-align: left;
+}
+.team .card p{
+    text-align: left;
+    font-size: 12px;
+}
+.team .data-user {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 14px;
+}
+.team .data-user .image{
+    width: 26px;
+    height: 26px;
+}
+.team .data-user img{
+    width: 100%;
+    border-radius: 50%;
+}
+.team .data-user p{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 7px;
+}
+.team .data-user span{
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.sing-up{
+    background-color: #575988;
+}
+.sing-up .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+}
+.sing-up .content{
+    margin: 3.5em 0 2em 0;
+}
+.sing-up .content p{
+    margin-top: 1em;
+    padding-inline: 1em;
+}
+.sing-up form{
+    width: 260px;
+}
+.sing-up form input{
+    border: none;
+    border-radius: 1px;
+    padding-left: 10px;
+    height: 34px;
+    font-size: 11px;
+}
+.sing-up form button{
+    margin-top: 10px;
+    height: 34px;
+    box-shadow: none;
+    font-size: 11px;
+    border-radius: 2px;
+}
 footer{
-    background-color: brown;
+    background-color: var(--azul-muy-oscuro);
+}
+footer .container{
+    text-align: left;
+    padding: 3.5em 1.5em;
+}
+footer .logo{
+    margin-bottom: 2.5em;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(62%) saturate(30%) hue-rotate(241deg) brightness(108%) contrast(100%);
+}
+footer .phone, footer .email{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+footer .phone p, footer .email p{
+    padding-left: 16px;
+    color: white
+}
+footer .phone img, footer .email img{
+    object-fit: none;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5em;
+    padding: 0;
+}
+footer a{
+    margin-bottom: 16px;
+    color: white;
+}
+footer a:hover{
+    color: #575988;
+}
+footer .media{
+    margin-top: 1.5em;
+    text-align: center;
+}
+footer .media img{
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(62%) saturate(30%) hue-rotate(241deg) brightness(108%) contrast(100%);
+    margin-inline: 4px;
+}
+footer .media img:hover{
+    filter: brightness(0) saturate(100%) invert(39%) sepia(3%) saturate(5761%) hue-rotate(200deg) brightness(87%) contrast(88%);
+    cursor: pointer;
 }
