@@ -78,6 +78,7 @@ form{
 }
 form input{
     height: 40px;
+    width: 100%;
     border: 1px solid var(--azul-desaturado);
     border-radius: 4px;
     padding-left: 20px;
