@@ -329,7 +329,7 @@ footer .media img:hover{
     color: hsl(224.1deg 93.46% 58.04%);
 }
 
-@media (min-width:640px) {
+@media (min-width:720px) {
     .container{
         max-width: 1300px;
         margin: auto;
