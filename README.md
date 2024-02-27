@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site here](https://jordy01090.github.io/Clipboard-Landing-Page/)
+- Live Site URL: [live site here](https://jordy01090.github.io/Fylo-landing-page/)
 
 ## My process
 
