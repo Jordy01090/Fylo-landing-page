@@ -34,15 +34,12 @@ nav,h3,form,input,.btn-started{
 p{
     font-size: 16px;
 }
-.bg-desktop, .bg-movile{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
+
 .container{
     max-width: 350px;
     margin: auto;
     text-align: center;
+    padding-inline: 12px;
 }
 
 
@@ -66,6 +63,7 @@ header a{
 
 .sign-in .img-1 img{
     width: 100%;
+    object-fit: contain;
 }
 .sign-in .content{
     color: var(--azul-muy-oscuro);
@@ -73,9 +71,6 @@ header a{
 }
 .sign-in p{
     padding: 2em 0;
-}
-#error-message{
-    display: none;
 }
 form{
     display: flex;
@@ -87,21 +82,20 @@ form input{
     border-radius: 4px;
     padding-left: 20px;
 }
-form input[type="email"]:invalid {
-    border: 2px solid red;
-}
-  
-form input[type="email"]:valid {
-    border: 2px solid green;
-}
 
-form #error-message {
+.sign-in input[type="email"]:invalid {
+    border: 1px solid #f35175;
+}
+#error-message{
     display: none;
-    color: red;
-    font-size: 14px;
 }
-
-form input[type="email"]:invalid + #error-message {
+.sign-in #error-message {
+    display: none;
+    font-family: "Raleway", sans-serif;
+    color: #f35175;
+    font-size: 12px;
+}
+.sign-in input[type="email"]:invalid + #error-message {
     display: block;
 }
 form button{
@@ -117,6 +111,7 @@ form button{
 }
 form button:hover{
     background-color:hsl(220.54deg 100% 70.98%);
+    transition: all 0.3s ease-in-out;
 }
 .sign-in .bg-desktop{
     display: none;
@@ -126,14 +121,20 @@ form button:hover{
     margin-top: 5em;
 }
 
-.features, .team{
-    background-color: hsl(240deg 75% 98.43%);
-}
 .features{
+    background-color: hsl(240deg 75% 98.43%);
     margin-top: -5px;
+}
+.features .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4.5em;
 }
 .features .img-2 img{
     width: 100%;
+    object-fit: contain;
 }
 
 .features .content{
@@ -147,9 +148,10 @@ form button:hover{
     margin-top: 4.5em;
     margin-bottom: 1.5em;
 }
-.features .content p{
-    text-align: left;
+.features .content .text p{
+    text-align: center;
     margin-bottom: 10px;
+    
 }
 .features .btn-filo{
     width: fit-content;
@@ -159,8 +161,8 @@ form button:hover{
     cursor: pointer;
 }
 .features .btn-filo .text:hover{
-    filter: brightness(0) saturate(100%) invert(91%) sepia(35%) saturate(551%) hue-rotate(92deg) brightness(95%) contrast(90%);;
-    
+    filter: brightness(0) saturate(100%) invert(91%) sepia(35%) saturate(551%) hue-rotate(92deg) brightness(95%) contrast(90%);
+    transition: all 0.3s ease-in-out;
 }
 .features .btn-filo .text{
     display: flex;
@@ -173,19 +175,7 @@ form button:hover{
 .features .btn-filo .arrow{
     padding-left: 10px;
 }
-
-
-.team{
-    margin-top: -4px;
-    padding-bottom: 80px;
-}
-.team .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.team .card{
+.features .card{
     display: flex;
     flex-direction: column;
     box-shadow: 0px 2px 14px hsla(0, 0%, 0%, 0.15);
@@ -195,34 +185,34 @@ form button:hover{
     background-color: white;
     margin-top: 0.5em 
 }
-.team .card .image{
+.features .card .image{
     text-align: left;
 }
-.team .card p{
+.features .card p{
     text-align: left;
     font-size: 12px;
 }
-.team .data-user {
+.features .data-user {
     display: flex;
     justify-content: left;
     align-items: center;
     margin-top: 14px;
 }
-.team .data-user .image{
+.features .data-user .image{
     width: 26px;
     height: 26px;
 }
-.team .data-user img{
+.features .data-user img{
     width: 100%;
     border-radius: 50%;
 }
-.team .data-user p{
+.features .data-user p{
     display: flex;
     flex-direction: column;
     padding-left: 10px;
     font-size: 7px;
 }
-.team .data-user span{
+.features .data-user span{
     font-weight: bold;
     font-size: 11px;
 }
@@ -239,6 +229,7 @@ form button:hover{
 }
 .sing-up .content{
     margin: 3.5em 0 2em 0;
+    color: white;
 }
 .sing-up .content p{
     margin-top: 1em;
@@ -254,6 +245,19 @@ form button:hover{
     height: 34px;
     font-size: 11px;
 }
+.sing-up input[type="email"]:invalid {
+    border: 1px solid #f35175;
+}
+
+.sing-up #error-message {
+    display: none;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 12px;
+}
+.sing-up input[type="email"]:invalid + #error-message {
+    display: block;
+}
 .sing-up form button{
     margin-top: 10px;
     height: 34px;
@@ -261,6 +265,7 @@ form button:hover{
     font-size: 11px;
     border-radius: 2px;
 }
+
 footer{
     background-color: var(--azul-muy-oscuro);
 }
@@ -295,6 +300,7 @@ footer a{
 }
 footer a:hover{
     color: #575988;
+    transition: all 0.3s ease-in-out;
 }
 footer .media{
     margin-top: 1.5em;
@@ -308,4 +314,143 @@ footer .media img{
 footer .media img:hover{
     filter: brightness(0) saturate(100%) invert(39%) sepia(3%) saturate(5761%) hue-rotate(200deg) brightness(87%) contrast(88%);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%);
+}
+.attribution a { 
+    transition: all 0.3s ease-in-out;
+    color: white; 
+}
+.attribution a:hover{
+    color: hsl(224.1deg 93.46% 58.04%);
+}
+
+@media (min-width:640px) {
+    .container{
+        max-width: 1300px;
+        margin: auto;
+        padding-inline: 24px;
+        text-align: left;
+    }
+    header .container{
+        padding-bottom: 3.5em;
+    }
+    header .logo {
+        width: 120px;
+    }
+    
+    .sign-in .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .sign-in .img-1{
+        width: 100%;
+        display: flex;
+        min-width: 100px;
+    }
+    .sign-in h1{
+        font-size: 38px;
+    }
+    .sign-in p {
+        padding: 16px 54px 16px 0;
+        font-size: 17px;
+    }
+    .sign-in form{
+        flex-direction: row;
+    }
+    .sign-in input{
+        width: 300px;
+    }
+    .sign-in button{
+        margin-top: 0;
+        margin-left: 20px;
+        width: 200px;
+    }
+    .sign-in .bg-movile{
+        display: none;
+    }
+    .sign-in .bg-desktop{
+        display: block;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    .features .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .features .img-2{
+        width: 60%;
+        display: flex;
+        min-width: 100px;
+    }
+    .features .content{
+        align-items: flex-start;
+
+    }
+    .features .content h3{
+        margin-top: 1.5em;
+        font-size: 38px;
+        text-align: left;
+        width: 16.5em;
+    }
+    .features .content .text p{
+        width: 32.5em;
+        font-size: 17px;
+        text-align: left;
+    }
+    .features .btn-filo{
+        margin: 0;
+        margin-bottom: 2em;
+    }
+
+    .sing-up .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2.5em;
+        padding-right: 4.5em;
+    }
+    .sing-up .content p{
+        width: 500px;
+        padding-inline: 0;
+    }
+    .sing-up h3{
+        font-size: 28px;
+    }
+    .sing-up form {
+        width: 400px;
+    }
+    .sing-up form button {
+        margin-top: 10px;
+        height: 34px;
+        width: 160px;
+        box-shadow: none;
+        font-size: 11px;
+        border-radius: 2px;
+        box-shadow: 0px 2px 6px hsla(0, 0%, 0%, 0.4);
+    }
+    
+    footer .container{
+        display: flex;
+        padding: 4em 1.5em;
+        justify-content: space-between;
+    }
+    footer ul{
+        margin-top: 5.9em;
+        padding: 0;
+    }
+    footer .media{
+        display: flex;
+        text-align: center;
+        padding-right: 6em;
+    }
+    footer .media img{
+        object-fit: contain;
+    }
 }
