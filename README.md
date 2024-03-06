@@ -1,7 +1,6 @@
 
 ## Welcome! 👋
 
-This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5).
 ## Table of contents
 
 - [Overview](#overview)
@@ -13,16 +12,9 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+The project focused on developing a website with a mobile-centric design using HTML and CSS, employing principles of mobile-first and responsive design. Techniques for image optimization and simplified navigation were applied, backed by comprehensive compatibility testing across various devices and browsers.
 
 ### Screenshot
 
@@ -46,7 +38,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge i've learn how to make a good responsive design, the correct use and structure of the html, the correct structure of the css too, i've learn how to position the elements in a single page, it was an excellent practice to me.
+In this proyect i've learn how to make a good responsive design, the correct use and structure of the html, the correct structure of the css too, i've learn how to position the elements in a single page, it was an excellent practice to me.
 
 
 ### Continued development
